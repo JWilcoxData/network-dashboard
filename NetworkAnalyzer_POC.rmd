@@ -1,0 +1,28 @@
+---
+title: "NetworkAnalyzer"
+author: "Jason Wilcox"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Network Traffic Analysis - POC
+
+**Setup**
+
+The information security team is looking to analyze large groups of network information.  They suspect that there is malware on some devices that is reaching out to a rogue actor.  The have some network traffic and they would like to build an analytic dashboard to that they can send to the head of Information Security to provide an analysis if the information.
+
+To get started with the business proof of concept, we need data in a real world form that could be presented to an analyst.  Many devices and tools in information security utilize the concept of a SPAN or TAP port to look at all the network traffic coming from a group of connected devices.  
+
+One tool, Wireshark, is a great tool for a variety of network analysis and we will use this tool to proxy the network traffic data file we might receive.  I would suggest adding some additional columns to your Wireshark data set, I’ve add Source Port, Destination Port and Expert Info.
+
+In addition, if we plan to do any assessment of IP locations (which we do) we will need some sort of dataset access.  For production level dashbaord's I would highly recommend finding an IP/Country dataset that allows access via API so that each iteration that is run has access to a IP/location table.  For the purposes of our POC to be delivered to the Information Security team we will use a static CSV.  There are a few different places to procure datasets, a quick google search led me to MaxMind <https://www.maxmind.com/en/home>.  They have a free lite dataset that can be downloaded as a CSV.
+
+
+**Prep**
+
+The success of our analysis is in large part due to the level of effort we put in before we ever start setting up an exploratory worksheet.  
+
+
