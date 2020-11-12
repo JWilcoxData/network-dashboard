@@ -24,5 +24,3 @@ In addition, if we plan to do any assessment of IP locations (which we do) we wi
 **Prep**
 
 The success of our analysis is in large part due to the level of effort we put in before we ever start setting up an exploratory worksheet.  
-
-
